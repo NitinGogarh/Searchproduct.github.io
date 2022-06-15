@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    margin-right: 23px;
+    margin-left: 23px;
+}
+.child1{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 30px;
+    position: sticky;
+    height: fit-content;
+    top: 0px;
+}
+form input{
+    margin: 0;
+    padding: 5px;
+}
+form{
+    margin: 23px;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+.companies
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.company-btn{
+    background-color: white;
+    border: 0ch;
+    margin: 7px;
+    font-size: 15px;
+}
+.company-btn:hover{
+    color: aquamarine;
+}
+.child2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+       width: 98%;
+      
+}
+.child2newclass{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 45px;
+}
+.child2-gchild1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.child2-gchild1 h3,h4{
+    margin: 2px;
+    padding: 0%;
+text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+}
+ .img{
+height: 10rem;
+width: 100%;
+    display: block;
+    object-fit: cover;
+border-radius: 4px;
+box-shadow: 2px 2px gainsboro
+}
+@media screen and (max-width:880px){
+    .child2 {
+        grid-template-columns: 1fr 1fr;
+        
+      }
+      .parent{
+        flex-direction: column;
+    }
+    .child1{
+        position: static;
+    }
+      .parent{
+          margin: 27px;
+      }
+      .child1{
+          width: 60%;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+      }
+}
+@media screen and (max-width: 500px) {
+    .child2 {
+     display: block;
+     
+    }
+    .parent{
+        flex-direction: column;
+    }
+    .child1{
+        position: static;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .parent{
+        margin: 14px;
+    }
+
+}
